@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar::-webkit-scrollbar {
+  @apply h-2 bg-tan pt-2;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-white;
+}
+.leaflet-container {
+  width: 100%;
+  height: 600px;
+  background-color: aquamarine;
+}
+
+.leaflet-popup-content-wrapper {
+  @apply w-80;
+}
+.leaflet-popup-content {
+  @apply mx-auto;
+}
+
+.leaflet-top {
+  top: 80%;
+}
+
+.hamburger-line {
+  @apply my-2 block h-[2px] w-[30px] transition-all duration-300;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply w-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.menu-list {
+  @apply mx-8 text-lg font-semibold text-dark transition-all ease-linear group-hover:border-b-4 group-hover:border-b-primary group-hover:text-primary;
+}
