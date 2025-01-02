@@ -13,7 +13,7 @@ export const payload = (token) => {
 
 export const authLogin = async (username, password) => {
   try {
-    const res = await axios.post("http://34.101.227.131:8000/login", {
+    const res = await axios.post("http://88.222.245.248:8000/login", {
       username,
       password,
     });
